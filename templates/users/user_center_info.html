@@ -19,9 +19,9 @@
       </div>
       <div class="content-block new-content">
         <h2 class="title" style="font-size: 15px;margin: 0;padding: 0;">
-        	<strong><a href="http://127.0.0.1:8080/user/ucenter">发表资源({{zynum}})</a></strong>
+        	<strong><a href="http://127.0.0.1:8000/user/ucenter">发表资源({{zynum}})</a></strong>
         	&nbsp;&nbsp;<strong><a href="#">&nbsp;&nbsp;B币数({{user_info.user_allmarks}})</a></strong>
-        	&nbsp;&nbsp;<strong><a href="http://127.0.0.1:8080/user/info">&nbsp;&nbsp;消息({{info_num}})</a></strong>
+        	&nbsp;&nbsp;<strong><a href="http://127.0.0.1:8000/user/info">&nbsp;&nbsp;消息({{info_num}})</a></strong>
         	&nbsp;&nbsp;<strong><a href="#">&nbsp;&nbsp;学习群(0)</a></strong>
         </h2>
         <div class="row">
@@ -30,7 +30,7 @@
               <div class="news-img col-xs-5 col-sm-5 col-md-4"> <a target="_blank" href=""><img src="/static/img/zydemo.jpg" alt=""> </a> </div>
               <div class="news-info col-xs-7 col-sm-7 col-md-8">
                 <dl>
-                  <dt> <a href="http:127.0.0.1:8080/other/source/?n={{contact.id}}&s=4566%{{contact.id}}7%38%54" target="_blank" > {{contact.title}}</a> </dt>
+                  <dt> <a href="http:127.0.0.1:8000/other/source/?n={{contact.id}}&s=4566%{{contact.id}}7%38%54" target="_blank" > {{contact.title}}</a> </dt>
                   <dd><span class="name"><a href="" title="由 jjl 发布" rel="author">{{contact.share_name}}</a></span> <span class="identity"></span> <span class="time">{{contact.create_time}}</span></dd>
                   <dd class="text">{{contact.content}}</dd>
                 </dl>
@@ -121,10 +121,10 @@
                 'img': '1',
                 'csrfmiddlewaretoken': '{{ csrf_token  }}'
                 };
-                $.post("http://127.0.0.1:8080/user/usermodify",params,function(result){
+                $.post("http://127.0.0.1:8000/user/usermodify",params,function(result){
                     if (result.res==0){
                         alert('修改成功');
-                        window.location.href ="http:127.0.0.1:8080/user/ucenter";
+                        window.location.href ="http:127.0.0.1:8000/user/ucenter";
 
                     }
                     else{

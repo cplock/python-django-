@@ -44,26 +44,26 @@ window.onload = function() {
                     <span>|</span>
                     <a href="user/logout">退出</a>
                     <span class="sp">|</span>
-                    <a href="http://127.0.0.1:8080/user/ucenter">用户中心()</a>
+                    <a href="http://127.0.0.1:8000/user/ucenter">用户中心()</a>
                 </div>
                 {% else %}
 				<div class="login_btn fl">
-					<a href="http://127.0.0.1:8080/user/login">登录</a>
+					<a href="http://127.0.0.1:8000/user/login">登录</a>
 					<span class="sp">|</span>
-					<a href="http://127.0.0.1:8080/user/register">注册</a>
+					<a href="http://127.0.0.1:8000/user/register">注册</a>
 				</div>
                 {% endif %}
 				<div class="user_link fl">
 					<span class="sp">|</span>
-					<a href="http://127.0.0.1:8080/user/forget">忘记密码</a>
+					<a href="http://127.0.0.1:8000/user/forget">忘记密码</a>
 				</div>
 			</div>
 		</div>
 </div>
 {% block seacher %}
 <div class="search_bar clearfix">
-		<a href="http://127.0.0.1:8080" class="loll fl" style="width: 160px; height: 90px;margin: 0;"><img src="/static/images/logo.jpg" style="width: 160px; height: 90px;margin-left: 80px"></a>
-		<div method="post" action="http://127.0.0.1:8080/other/seacher" class="search_con fl">
+		<a href="http://127.0.0.1:8000" class="loll fl" style="width: 160px; height: 90px;margin: 0;"><img src="/static/images/logo.jpg" style="width: 160px; height: 90px;margin-left: 80px"></a>
+		<div method="post" action="http://127.0.0.1:8000/other/seacher" class="search_con fl">
             {% csrf_token %}
 			<input type="text" class="input_text fl" name="seacherword" placeholder="搜索资源">
 			<input type="submit" class="input_btn fr seacher" value="搜索">
@@ -84,7 +84,7 @@ window.onload = function() {
 
               }
               else{
-                  window.location.href ="http://127.0.0.1:8080/other/seacher?seacherkey="+seacherkey;
+                  window.location.href ="http://127.0.0.1:8000/other/seacher?seacherkey="+seacherkey;
               }
           });
 
@@ -95,14 +95,14 @@ window.onload = function() {
 <header class="ltHead" >
     <div class="ltHead_cen">
         <ul class="headNav">
-            <li><a href="http://127.0.0.1:8080">首页</a></li>
-            <li><a href="http://127.0.0.1:8080/goodclass">精品教程</a></li>
-            <li><a href="http://127.0.0.1:8080/bw">百度网盘教程资源</a></li>
-            <li><a href="http://127.0.0.1:8080/bcym">编程源码资源</a></li>
-            <li><a href="http://127.0.0.1:8080/answer">有问必答</a></li>
-            <li><a href="http://127.0.0.1:8080/getcoin">B币获取</a></li>
-            <li><a href="http://127.0.0.1:8080/enjoy">分享资源</a></li>
-            <li><a href="http://127.0.0.1:8080/vip">升级vip</a></li>
+            <li><a href="http://127.0.0.1:8000">首页</a></li>
+            <li><a href="http://127.0.0.1:8000/goodclass">精品教程</a></li>
+            <li><a href="http://127.0.0.1:8000/bw">百度网盘教程资源</a></li>
+            <li><a href="http://127.0.0.1:8000/bcym">编程源码资源</a></li>
+            <li><a href="http://127.0.0.1:8000/answer">有问必答</a></li>
+            <li><a href="http://127.0.0.1:8000/getcoin">B币获取</a></li>
+            <li><a href="http://127.0.0.1:8000/enjoy">分享资源</a></li>
+            <li><a href="http://127.0.0.1:8000/vip">升级vip</a></li>
         </ul>
     </div>
 </header>

@@ -18,7 +18,7 @@
 						<tbody>
 						<tr>
 						  <td>购买终身vip</td>
-						  <td>20元终身VIP（可获取500000B币）*站长推荐(<a href="http://127.0.0.1:8080/vip" style="color: red;display: inline;">点击购买</a>)</td>
+						  <td>20元终身VIP（可获取500000B币）*站长推荐(<a href="http://127.0.0.1:8000/vip" style="color: red;display: inline;">点击购买</a>)</td>
 						  <td>无数次</td>
 						</tr>
 						<tr>
@@ -86,10 +86,10 @@
                         'comment_content':comment,
                         'csrfmiddlewaretoken': '{{ csrf_token  }}',
                     }
-                    $.post('http://127.0.0.1:8080/comment', params, function (data) {
+                    $.post('http://127.0.0.1:8000/comment', params, function (data) {
                         if (data.res == 0){
                             alert("评论成功");
-                            window.location.href ="http://127.0.0.1:8080/getcoin";
+                            window.location.href ="http://127.0.0.1:8000/getcoin";
                         }
                         else
                         {

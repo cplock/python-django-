@@ -6,8 +6,8 @@
 
 {% block seacher %}
 <div class="search_bar clearfix">
-		<a href="http://127.0.0.1:8080" class="loll fl" style="width: 160px; height: 90px;margin: 0;"><img src="/static/images/logo.jpg" style="width: 160px; height: 90px;margin-left: 80px"></a>
-		<div method="post" action="http://127.0.0.1:8080/other/seacher" class="search_con fl">
+		<a href="http://127.0.0.1:8000" class="loll fl" style="width: 160px; height: 90px;margin: 0;"><img src="/static/images/logo.jpg" style="width: 160px; height: 90px;margin-left: 80px"></a>
+		<div method="post" action="http://127.0.0.1:8000/other/seacher" class="search_con fl">
             {% csrf_token %}
 			<input type="text" class="input_text fl" name="seacherword" value="{{key}}" placeholder="搜索资源">
 			<input type="submit" class="input_btn fr seacher" value="搜索">
@@ -29,7 +29,7 @@
               <div class="news-img col-xs-5 col-sm-5 col-md-4"> <a target="_blank" href=""><img src="/static/images/logo.jpg" alt=""> </a> </div>
               <div class="news-info col-xs-7 col-sm-7 col-md-8">
                 <dl>
-                  <dt> <a href="http:127.0.0.1:8080/other/source/?n={{contact.id}}&s=4566%{{contact.id}}7%38%54" target="_blank" > {{contact.title}} </a> </dt>
+                  <dt> <a href="http:127.0.0.1:8000/other/source/?n={{contact.id}}&s=4566%{{contact.id}}7%38%54" target="_blank" > {{contact.title}} </a> </dt>
                   <dd><span class="name"><a href="#" title="由 jjl 发布" rel="author">{{contact.share_name}}</a></span> <span class="identity"></span> <span class="time"> {{contact.tcreate_time}} </span></dd>
                   <dd class="text">{{contact.content}}</dd>
                 </dl>

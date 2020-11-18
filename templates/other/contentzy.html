@@ -65,14 +65,14 @@
                     'user_name': '{{request.session.username}}',
                     'csrfmiddlewaretoken': '{{ csrf_token  }}'
                     };
-                    $.post("http://127.0.0.1:8080/other/buy",params,function(result){
+                    $.post("http://127.0.0.1:8000/other/buy",params,function(result){
                         if (result.res==0){
                             alert('购买成功');
-                            window.location.href ="http:127.0.0.1:8080/other/source/?n={{source_id}}&s=4566%{{source_id}}7%38%54";
+                            window.location.href ="http:127.0.0.1:8000/other/source/?n={{source_id}}&s=4566%{{source_id}}7%38%54";
                         }
                         if (result.res==1){
                             alert('你已购买此资源');
-                            window.location.href ="http:127.0.0.1:8080/other/source/?n={{source_id}}&s=4566%{{source_id}}7%38%54";
+                            window.location.href ="http:127.0.0.1:8000/other/source/?n={{source_id}}&s=4566%{{source_id}}7%38%54";
                         }
                         if (result.res==2){
                             alert('你的积分不足');
@@ -178,10 +178,10 @@
                             'comment_content':comment,
                             'csrfmiddlewaretoken': '{{ csrf_token  }}',
                         }
-                        $.post('http://127.0.0.1:8080/comment', params, function (data) {
+                        $.post('http://127.0.0.1:8000/comment', params, function (data) {
                             if (data.res == 0){
                                 alert("评论成功");
-                                window.location.href ="http://127.0.0.1:8080/other/source?n={{source_id}}&s=4566%{{source_id}}7%38%54";
+                                window.location.href ="http://127.0.0.1:8000/other/source?n={{source_id}}&s=4566%{{source_id}}7%38%54";
                             }
                             else
                             {

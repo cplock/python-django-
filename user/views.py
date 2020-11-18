@@ -25,7 +25,7 @@ def login(request):
                  request.session['islogin'] = True
                  request.session['username'] = username
                  request.session['user_id'] = var.userid
-                 return JsonResponse({'res': 0, 'jump_url': 'http:127.0.0.1:8080/'})
+                 return JsonResponse({'res': 0, 'jump_url': 'http:127.0.0.1:8000/'})
              else:
                  continue
         return JsonResponse({'res': 1, 'errmsg': '登录失败'})
