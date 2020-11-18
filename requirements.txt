@@ -1,4 +1,4 @@
-pip3 insrall amqp==2.2.2
+pip3 install amqp==2.2.2
 asn1crypto==0.24.0
 billiard==3.5.0.3
 celery==4.1.0

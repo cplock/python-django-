@@ -91,8 +91,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': 'wyl336339',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'root',
+        'HOST': '118.24.203.63',
         'PORT': 3306,
         'OPTIONS': {
             'read_default_file': '/path/to/my.cnf',
